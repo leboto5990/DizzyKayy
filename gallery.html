@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Sentle Afro Hair Studio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf6;
+      color: #333;
+    }
+    header {
+      background-color: #b85c38;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 36px;
+      text-align: center;
+      color: #b85c38;
+      margin-bottom: 30px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      background-color: #b85c38;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sentle Afro Hair Studio</h1>
+  </header>
+
+  <section>
+    <h2>Our Work Gallery</h2>
+    <div class="gallery">
+      <img src="static/images/style1.jpg" alt="Hair Style 1">
+      <img src="static/images/style2.jpg" alt="Hair Style 2">
+      <img src="static/images/style3.jpg" alt="Hair Style 3">
+      <img src="static/images/style4.jpg" alt="Hair Style 4">
+      <img src="static/images/style5.jpg" alt="Hair Style 5">
+      <img src="static/images/style6.jpg" alt="Hair Style 6">
+      <img src="static/images/style7.jpg" alt="Hair Style 7">
+      <img src="static/images/style8.jpg" alt="Hair Style 8">
+      <img src="static/images/style9.jpg" alt="Hair Style 9">
+      <img src="static/images/style10.jpg" alt="Hair Style 10">
+      <img src="static/images/style11.jpg" alt="Hair Style 11">
+      <img src="static/images/style12.jpg" alt="Hair Style 12">
+      <img src="static/images/style13.jpg" alt="Hair Style 13">
+      <img src="static/images/style14.jpg" alt="Hair Style 14">
+      <img src="static/images/style15.jpg" alt="Hair Style 15">
+      <img src="static/images/style15.jpg" alt="Hair Style 15">
+      <img src="static/images/style16.jpg" alt="Hair Style 16">
+      <img src="static/images/style17.jpg" alt="Hair Style 17">
+      <img src="static/images/style18.jpg" alt="Hair Style 18">
+      <img src="static/images/style19.jpg" alt="Hair Style 19">
+      <img src="static/images/style20.jpg" alt="Hair Style 20">
+      <img src="static/images/style21.jpg" alt="Hair Style 21">
+      <img src="static/images/style22.jpg" alt="Hair Style 22">
+      <img src="static/images/style23.jpg" alt="Hair Style 23">
+      <img src="static/images/style24.jpg" alt="Hair Style 24">
+      <img src="static/images/style25.jpg" alt="Hair Style 25">
+      <img src="static/images/style26.jpg" alt="Hair Style 26">
+      <img src="static/images/style26.jpg" alt="Hair Style 26">
+      <img src="static/images/style27.jpg" alt="Hair Style 27">
+      <img src="static/images/style28.jpg" alt="Hair Style 28">
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Sentle Afro Hair Studio. All rights reserved.
+  </footer>
+{% endblock %}
+</body>
+</html>

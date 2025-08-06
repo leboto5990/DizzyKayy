@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>Admin Dashboard</h1>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Service</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Action</th>
+    </tr>
+    {% for appointment in appointments %}
+    <tr>
+      <td>{{ appointment[0] }}</td>
+      <td>{{ appointment[1] }}</td>
+      <td>{{ appointment[2] }}</td>
+      <td>{{ appointment[3] }}</td>
+      <td>{{ appointment[4] }}</td>
+      <td>{{ appointment[5] }}</td>
+      <td>{{ appointment[6] }}</td>
+      <td><a href="{{ url_for('delete', id=appointment[0]) }}">Delete</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+  <a href="{{ url_for('logout') }}">Logout</a>
+{% endblock %}

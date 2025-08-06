@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Sentle Afro Hair Studio</title>
+  <style>
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf6f0;
+      color: #333;
+    }
+    header {
+      background-color: #b85c38;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 36px;
+      text-align: center;
+      color: #b85c38;
+      margin-bottom: 20px;
+    }
+    h3 {
+      color: #b85c38;
+      font-size: 28px;
+    }
+    ul {
+      list-style: square;
+      padding-left: 20px;
+    }
+    a {
+      color: #b85c38;
+      text-decoration: none;
+    }
+    footer {
+      background-color: #b85c38;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+  
+<h2> About Us</h2>
+<p>Welcome to <strong>Sentle Afro Hair Studio</strong>, where beauty meets passion and style is crafted with care.</p>
+    <p>We are a team of dedicated beauty professionals based in <strong>Polowane</strong>, committed to helping you look and feel your best.
+       At our salon, we believe every client deserves personalized attention, high-quality service, and an experience that leaves them
+       feeling confident and refreshed.</p>
+    <p>From <strong>modern haircuts and styling</strong> to <strong>luxurious treatments, braiding, weaves, and skincare services</strong>,
+       our goal is to bring out your natural beauty while delivering exceptional customer care.</p>
+    <p>With years of experience in the beauty industry, we’ve proudly served clients across Polowane and beyond. Whether you're preparing
+       for a special occasion or simply need a relaxing self-care day, our warm and welcoming environment is the perfect place to unwind and transform your look.</p>
+    <p>We also offer <strong>easy online appointment booking</strong>, professional consultations, and a gallery of our latest work to inspire your next visit.</p>
+
+    <h3>Why Choose Us?</h3>
+    <ul>
+      <li>Friendly, professional stylists</li>
+      <li>Affordable, high-quality services</li>
+      <li>Clean, modern salon environment</li>
+      <li>Convenient booking and flexible hours</li>
+      <li>Passion for creativity and customer satisfaction</li>
+    </ul>
+
+    <p>💖 <strong>Your beauty is our priority.</strong> Come experience the difference at <strong>Sentle Afro Hair Studio</strong> — where style begins and confidence shines.</p>
+
+    <p>👉 <em>Ready for a new look?</em> <a href="{{ url_for('book') }}"><strong>Book your appointment</strong></a> today or explore our <a href="{{ url_for('services') }}"><strong>services</strong></a> to learn more.</p>
+  
+{% endblock %}
