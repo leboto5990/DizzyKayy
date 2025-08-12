@@ -2,8 +2,75 @@
 {% block content %}
 <nav>
 <div class="container my-5">
-  <h2 class="text-center text-uppercase" style="color: rgb(224, 222, 223); font-weight: bold;">Kids Price List</h2>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf6;
+      color: #333;
+    }
+    header {
+      background-color: #b85c38;
+      padding: 1%;
+      text-align: center;
+      color: rgba(46, 7, 7, 0.927);
+    }
+    nav a {
+      color: rgba(200, 38, 38, 0.925);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 36px;
+      text-align: center;
+      color: #b85c38;
+      margin-bottom: 30px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 250px;
+      height: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(16, 7, 7, 0.719);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.09);
+    }
+    footer {
+      background-color: #b85c38;
+      color: rgba(34, 5, 5, 0.776);
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+  <h2 class="text-center text-uppercase" style="color: rgba(26, 27, 24, 0.934); font-weight: bold;">Kids Price List</h2>
 
+    <nav>
+        <ul>
+            <li class="active">
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="Adults_prices.html">Adults_prices</a></li>
+            <li><a href="contact.html">contact</a></li>
+             <li><a href="index.html">home</a></li>
+            <li><a href="book.html">book</a></li>
+            <li><a href="about.html">about </a></li>
+            <li><a href="admin_dashboard.html">admin_dashboard</a></li>
+            <li><a href="admin_login.html">admin_login</a></li>
+        </ul>
+    </nav>
   <div class="table-responsive">
     <table class="table table-striped table-bordered mt-4">
       <thead class="table-dark">
